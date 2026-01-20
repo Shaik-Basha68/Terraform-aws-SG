@@ -1,8 +1,6 @@
 variable "sg_name" {
     description = "The name of the security group"
     type        = string
-    default     = "allow_tls"
-  
 }
 variable "sg_description" {
     description = "The description of the security group"
@@ -29,3 +27,4 @@ variable "vpc_id" {
     description = "The ID of the VPC where the security group will be created"
     type        = string
 }
+

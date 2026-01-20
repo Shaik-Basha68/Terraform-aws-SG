@@ -22,4 +22,10 @@ variable "Project_name" {
 variable "Environment" {
     description = "The environment name"
     type        = string
+
+}
+
+variable "vpc_id" {
+    description = "The ID of the VPC where the security group will be created"
+    type        = string
 }

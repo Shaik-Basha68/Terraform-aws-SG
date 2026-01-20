@@ -1,7 +1,7 @@
 resource "aws_security_group" "allow_tls" {
   name        = var.sg_name
   description = var.sg_description
-  vpc_id      = data.aws_vpc.selected.id
+  vpc_id      = data.aws_ssm_parameter.vpc_id.value
 
    egress {
     from_port        = 0
@@ -22,3 +22,4 @@ resource "aws_security_group" "allow_tls" {
 
 
  
+
